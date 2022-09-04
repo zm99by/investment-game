@@ -1,6 +1,9 @@
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
+
+name: Test release
 
 jobs:
   release-linux-amd64:
