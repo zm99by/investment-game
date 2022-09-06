@@ -17,5 +17,7 @@ jobs:
         run: go build -v ./...
       - name: PWD
         run: pwd
+      - name: ls 
+        run: ls -la
      # - name: Test with the Go CLI
      #   run: go test
