@@ -29,8 +29,7 @@ jobs:
     ## We want to define a strategy for our job
     strategy:
       matrix:
-        go-version: [1.16.x, 1.17.x]
-        platform: [ubuntu-latest, macos-latest, windows-latest] #?
+        platform: [ubuntu-latest, macos-latest] 
     
     ## Defines the platform for each test run
     runs-on: ${{ matrix.platform }}
@@ -39,7 +38,7 @@ jobs:
     - name: Install Go
       uses: actions/setup-go@v2
       with:
-        go-version: ${{ matrix.go-version }}
+        go-version: 1.17
 
     - name: Checkout code
       uses: actions/checkout@v2
