@@ -26,6 +26,7 @@ jobs:
         with:
           version: v1.29
   test:
+    needs: lint
     ## We want to define a strategy for our job
     strategy:
       matrix:
