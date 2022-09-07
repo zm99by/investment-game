@@ -1,4 +1,4 @@
-name: golangci-lint
+name: golang_ci
 on:
   push:
     tags:
@@ -8,7 +8,6 @@ on:
   pull_request:
     branches:
       - main
-name: Go_CI
 
 jobs:
   golangci:
