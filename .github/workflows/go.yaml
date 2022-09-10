@@ -55,5 +55,3 @@ jobs:
           go-version: '1.17.x'
       - name: Build
         run: go build -v ./...
-      - name: ls 
-        run: ls -la
