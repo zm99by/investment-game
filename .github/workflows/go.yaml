@@ -56,4 +56,4 @@ jobs:
       - name: Build
         run: go build -v ./...
       - name: ls
-        run: ls -la
+        run: ls -la ./pkg/cached/
